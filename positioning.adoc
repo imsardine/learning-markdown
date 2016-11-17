@@ -1,0 +1,16 @@
+= Markdown 的定位
+
+雖然可以用來產生 HTML，但 Markdown 絕非被設計來取代 HTML，至少前者是用於寫作 (writing format)，後者則用於發行 (publish format)，在用途上明顯不同。
+
+[quote,'https://daringfireball.net/projects/markdown/syntax#philosophy[Daring Fireball: Markdown Syntax Documentation]']
+____
+Markdown is not a replacement for HTML, or even close to it. Its syntax is very small, corresponding only to a very small subset of HTML tags. The idea is not to create a syntax that makes it easier to insert HTML tags. In my opinion, HTML tags are already easy to insert. The idea for Markdown is to make it easy to read, write, and edit prose. HTML is a publishing format; Markdown is a writing format. Thus, Markdown’s formatting syntax only addresses issues that can be conveyed in plain text.
+____
+
+**但從_寫作_的角度來看，兩者其實是_互補_的**。Markdown 只提供某些_適合用純文字來表現_的寫法，當你發現沒有適合的 Markdown 語法，或是某個部份用 HTML 直接寫更為合適時，就直接用 HTML 來寫，這就是 Markdown 的態度。
+
+[quote,'https://daringfireball.net/projects/markdown/syntax#philosophy[Daring Fireball: Markdown Syntax Documentation]']
+____
+For any markup that is not covered by Markdown’s syntax, you simply use HTML itself. There’s no need to preface it or delimit it to indicate that you’re switching from Markdown to HTML; you just use the tags.
+____
+

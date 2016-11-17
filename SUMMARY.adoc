@@ -1,0 +1,62 @@
+= Summary
+
+ * link:README.adoc[前言]
+ * link:start/README.adoc[新手上路]
+   ** link:start/setup.adoc[安裝設定]
+   ** link:start/hello-world.adoc[Hello, World!]
+   ** link:start/quick-start.adoc[Markdown 速成]
+ * link:positioning.adoc[Mardown 的定位]
+ * link:writing/README.adoc[寫作]
+   ** link:writing/paragraphs.adoc[段落]
+   ** link:writing/headers.adoc[標題]
+   ** link:writing/links.adoc[連結]
+   ** link:writing/quotes.adoc[引用]
+   ** link:writing/lists.adoc[清單]
+   ** link:writing/tables.adoc[表格]
+ * link:howtos/README.adoc[HOWTOs]
+ * link:variants/README.adoc[變異 & 標準化]
+ * link:markdown-cli.adoc[附錄：`Markdown.pl`]
+ * link:cheat-sheet.adoc[附錄：速查表]
+
+////
+Outline:
+
+ * Quick Start 只是單純說明用法，沒有要注意的地方 (比如不怎麼樣，就會怎樣，只有 happy path)，沒有什麼寫法比較好...
+ * 為什麼 Copy Link extension 會在裡頭加 escape，這部份有定義在 spec 裡嗎??
+ * 先介紹最基本的語法，再帶出不同的 flavor/variant；http://johnmacfarlane.net/babelmark2/[Babelmark 2 - Compare markdown implementations] 可以用來比對各種實作的不同。
+ * 變種 vs. 標準化 (CommonMark)，尤其是 Gruber 的觀點。
+ * 可以安插練習題的話還不錯；用 Markdow 做出一份文件，用到所有的語法
+ * 連結 (相對)、插入圖片、圖片連結、表格
+ * 為什麼要學? 共筆 (Wiki)、
+ * 幾個一定要懂的 flavor - GitHub、StackOverflow、WordPress
+ * 相關的工具 HackMD、Atom https://toomuchlatte.com/2016/06/15/my-complete-atom-io-package-list-for-writing-markdown/[My Complete Atom.io Package List for Writing Markdown – TOO MUCH LATTE] 對 Markdown 的支援真不少
+ * 一張同時有各種 flavor 的 cheat sheet。
+
+TBD:
+
+ * 編輯時，建議採用等寬字
+ * 標題後面的 `#` 可以省略 (數量通常會一樣)
+ * 引用，通常要註明出處，Markdown 怎麼做
+ * multi-paragraph list items 在 `1.` 前後加個空白，nested graph 剛好可以對齊。
+ * Markdown 對待 block-level HTML tag 跟 Span-level HTML tag 的內容方式大不同，跟 HTML 並存的關係有必要解釋清楚。
+
+Questions:
+
+ * 在某些平台，會不會只支援 Markdown 的 subset，比如在 SO 的 comment 裡，怎麼可能用 reference-style link??
+ * 瞭解 https://daringfireball.net/projects/markdown/syntax 中的 "Markdown is not a replacement for HTML" 這一段，大概就能理解為何 Gruber 不建議擴充 Markdown??
+ * 如果 `_` 是強調，而 `__` 是畫重點，在實務上只會 `__` 包著 `_`，不會是倒過來的用法??
+ * http://daringfireball.net/projects/markdown/index.text 這裡的 reference link 習慣在前面加兩個空白??
+ * 同一行裡面出現多個 `_` 或 `*` 時，很難控制它的表現，有沒有規則??
+ * 如果不支援就用 HTML 的理念，後來對 Markdown 的擴充，是不是違背了這樣的想法??
+ * 怎麼做 TOC，怎麼為 header 加上 anchor?? => http://daringfireball.net/projects/markdown/syntax.text
+ * 同一份文件裡 reference link 的 link name 好像可以定義多次?? => http://daringfireball.net/projects/markdown/syntax.text 另外 http://daringfireball.net/projects/markdown/index.text 出現在 header 後加上 `<a id="..." />` 的用法，試過 `## 標題二 <a id="anchor" /> ##` 這樣也可以
+ * http://daringfireball.net/projects/markdown/dingus 採用 Markdown 1.0.2b7 這是怎麼回事??
+ * 在團隊裡使用 Markdown 要注意什麼?? => style 吧，前後要不要空白、要不要斷行等 (一行不要超過 80 個字?)，重點就是要維持原文的可讀性；雖然說只要產出的結果一樣就好，但 Markdown 在設計上也強調原始文件的可讀性；採用 inline link 還是 reference link，後者確實能大大提高可讀性。標題前的 `#` 跟文字要空一格
+ * 怎麼做投影片?? https://github.com/visit1985/mdp[visit1985/mdp: A command-line based markdown presentation tool.] http://www.decksetapp.com/[Deckset for Mac: Turn your notes into beautiful presentations] 已經成為一種服務，提供許多 themes => https://github.com/egonschiele/mdpress[egonSchiele/mdpress: [DEAD] Make impress.js presentations from markdown files.] 本地端轉換工具 => https://github.com/tybenz/vimdeck[tybenz/vimdeck: VIM as a presentation tool] VIM 也有!!!
+ * https://github.com/tj/mad 用來預覽 markdown manual ??
+ * 慣用的副檔名?? => `.md` 或 `.markdown`?
+ * 怎麼在 terminal 裡預覽 Markdown?? https://github.com/axiros/terminal_markdown_viewer[axiros/terminal_markdown_viewer: Styled Terminal Markdown Viewer] https://linux.die.net/man/1/markdown http://tosbourn.com/view-markdown-files-terminal/[View Markdown Files in your Terminal] 常見的解法都是 pandoc + lynx/w3m http://unix.stackexchange.com/questions/4140/markdown-viewer => https://coderwall.com/p/iryumw/viewing-markdown-files-in-terminal http://brettterpstra.com/projects/mdless/ 更酷 (Ruby)，搭配 iTerm2 顯示圖形 ... 或許 syntax highlighting 就已經足夠??
+ * 怎麼用 Markdown 寫 mind map?? 例如 mindmap https://github.com/dundalek/markmap http://brettterpstra.com/2013/08/18/markdown-to-mind-map/ https://atom.io/packages/markdown-mindmap (只轉標題?) https://github.com/dundalek/atom-markdown-mindmap 等
+ * https://github.com/adam-p/markdown-here/[adam-p/markdown-here: Google Chrome, Firefox, and Thunderbird extension that lets you write email in Markdown and render it before sending.] 的星星數也太多!!
+////
+

@@ -1,0 +1,4 @@
+= Markdown 學習筆記
+
+雖然自己是 AsciiDoc 的擁護者，但不得不承認 Markdown 在大部份的領域都比 AsciiDoc 成功。有趣的事，這本關於 Markdown 的書，其實是用 AsciiDoc 寫的 :-)
+

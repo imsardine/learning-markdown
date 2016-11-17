@@ -1,0 +1,35 @@
+= 新手上路
+
+Markdown 是一種容易撰寫／直接閱讀的純文字格式，同時又可以轉換成 https://en.wikipedia.org/wiki/XHTML[(X)HTML]，所以廣泛地被應用在討論、共筆、部落格、一般寫作等，屬於 https://en.wikipedia.org/wiki/Lightweight_markup_language[輕量級標記語言] 的一種。
+
+image::https://upload.wikimedia.org/wikipedia/commons/4/48/Markdown-mark.svg[]
+
+(Markdown 的標誌，由 https://dcurt.is/the-markdown-mark[Dustin Curtis 設計]；圖片來源: https://en.wikipedia.org/wiki/Markdown[Markdown - Wikipedia])
+
+Markdown 的語法是 2004 由 https://en.wikipedia.org/wiki/John_Gruber[John Gruber] 制定，靈感主要是來自於純文字電子郵件。
+
+[quote]
+____
+ * http://daringfireball.net/projects/markdown/[Markdown 官方網站]
+ * http://daringfireball.net/projects/markdown/syntax[Markdown 語法]
+____
+
+其中最重要的設計理念是**可讀性 (readability) － 文件本身可以直接閱讀 (readable as-is)，甚至看不出有特別做格式化 (formatting)**。
+
+[quote,'http://daringfireball.net/projects/markdown/[Daring Fireball: Markdown]']
+____
+The overriding design goal for Markdown’s formatting syntax is to make it as readable as possible. The idea is that a Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions.
+____
+
+[TIP]
+====
+有些文件提到 Markdown 的語法是由 John Gruber 與 https://en.wikipedia.org/wiki/Aaron_Swartz[Aaron Swartz] 一起制定，但 John Gruber 在一份文章回應到：他是 Markdown 唯一的創造者，而 Aaron Swartz 只能說他建議很有幫助而已。
+
+[quote,'https://www.onemanandhisblog.com/archives/2014/09/markdown-commonmark-open-source-controversy.html[Markdown versus CommonMark: the ambiguity and clarity dilemma - One Man & His Blog]']
+____
+I am Markdown’s sole creator, not co-creator. I assume, you’re thinking of Aaron Swartz, whose feedback was instrumental…
+____
+====
+
+Markdown 同時也是一個工具的名稱 - 由 John Gruber 撰寫的 Perl script (http://daringfireball.net/projects/markdown/[`Markdown.pl`])，可以用來將 Mardown 文件轉換成 HTML。雖然它還有些不完善的地方 (最後一個發行版是 2014-12-17 的 1.0.1)，但因為它相對單純，很適合用來學習 Markdown 的語法，至今也仍常被用來釐清一些文件沒說明清楚的地方。
+

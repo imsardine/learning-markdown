@@ -1,0 +1,38 @@
+= `Markdown.pl`
+
+== 安裝設定
+
+在 OS X 上可以用 http://brew.sh/[Homebrew] 安裝 `markdown` 套件。
+
+----
+brew update && brew install markdown
+----
+
+在 Debian/Ubuntu 上也有 `markdown` 套件可以安裝。(其他 Linux 發行版也應該有提供類似的套件)
+
+----
+sudo apt-get install markdown
+----
+
+套件安裝完成後就有 `markdown` 指令可以用，背後的實作就是 `Markdown.pl`。
+
+檢查一下 `markdown` 是否安裝妥當：
+
+----
+$ markdown --version
+
+This is Markdown, version 1.0.1.
+Copyright 2004 John Gruber
+http://daringfireball.net/projects/markdown/
+----
+
+== `markdown` 指令的用法
+
+----
+markdown [<MARKDOWN_FILE>]
+----
+
+如果沒有提供 _MARKDOWN_FILE_，會從 STDIN 讀取，按 Ctrl-D 可以送出 EOF。結果會輸出到 STDOUT。
+
+完整的用法可以用 `perldoc markdown` 查閱。
+
